@@ -5,12 +5,14 @@ metadata:
 
 vlan:
     _process: unnecessary
+    vlan:
+        _process:
+            - path: vlan
+              regexp: "(?P<value>\\d+)"
+              from: root_vlans.0
     config:
         _process: unnecessary
         vlan-id:
             _process:
                 - path: "encapsulation.dot1Q"
                   regexp: "^(?P<value>\\d+)$"
-                - path: "vlan"
-                  regexp: "(?P<value>\\S+)"
-                  from: root_system.0
