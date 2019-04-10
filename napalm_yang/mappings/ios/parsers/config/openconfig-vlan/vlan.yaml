@@ -11,3 +11,6 @@ vlan:
             _process:
                 - path: "encapsulation.dot1Q"
                   regexp: "^(?P<value>\\d+)$"
+                - path: "vlan"
+                  regexp: "(?P<value>\\S+)"
+                  from: root_system.0
