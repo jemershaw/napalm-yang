@@ -9,7 +9,7 @@ with open("requirements.txt", "r") as fs:
 
 setup(
     name="napalm-yang",
-    version="0.1.0",
+    version="0.1.5",
     packages=find_packages(),
     author="David Barroso",
     author_email="dbarrosop@dravetech.com",
