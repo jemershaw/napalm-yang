@@ -175,10 +175,9 @@ system:
             _process: not_implemented
         hostname:
             _process:
-              - path: hostname
-                key: hostname
+              - path: "hostname"
                 from: root_system.0
-            hostname: not_implimented
+                regexp: "(?P<value>.*)$"
         login-banner:
             _process: not_implemented
         motd-banner:
