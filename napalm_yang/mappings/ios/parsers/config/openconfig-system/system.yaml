@@ -176,8 +176,9 @@ system:
         hostname:
             _process:
               - path: hostname
+                key: hostname
                 from: root_system.0
-                regexp: ".*"
+            hostname: not_implimented
         login-banner:
             _process: not_implemented
         motd-banner:
