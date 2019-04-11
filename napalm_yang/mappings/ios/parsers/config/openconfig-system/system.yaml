@@ -174,10 +174,12 @@ system:
         domain-name:
             _process: not_implemented
         hostname:
-            _process:
-              - path: "hostname"
-                from: root_system.0
-                regexp: "(?P<value>.*)$"
+            _process: not_implemented
+            poop:
+              _process:
+                - path: "hostname"
+                  key: hostname
+                  from: root_system.0
         login-banner:
             _process: not_implemented
         motd-banner:
