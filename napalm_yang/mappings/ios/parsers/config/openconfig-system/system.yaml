@@ -176,7 +176,7 @@ system:
         hostname:
             _process:
               - path: "hostname"
-                regexp: "(?P<value>\\S+)$"
+                regexp: "(?P<value>.*)$"
         login-banner:
             _process: not_implemented
         motd-banner:
