@@ -172,7 +172,9 @@ system:
     config:
         _process: unnecessary
         domain-name:
-            _process: not_implemented
+            _process:
+              - path: "ip domain-name"
+                from: root_system.0
         hostname:
             _process:
                 - path: "hostname"
