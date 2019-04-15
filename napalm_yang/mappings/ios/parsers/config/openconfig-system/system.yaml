@@ -210,15 +210,15 @@ system:
         servers:
             _process: unnecessary
             server:
-                _process: unnecessary
+                _process:
+                  - path: "ip.name-server"
+                    from: root_system.0
                 address:
                     _process: not_implemented
                 config:
-                    _process: unnecessary
+                    _process: not_implemented
                     address:
-                        _process:
-                          - path: "ip.name-server"
-                            from: root_system.0
+                        _process: not_implemented
                     port:
                         _process: not_implemented
                 state:
