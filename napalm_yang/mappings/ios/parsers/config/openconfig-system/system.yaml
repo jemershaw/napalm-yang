@@ -184,9 +184,9 @@ system:
         motd-banner:
             _process: not_implemented
     dns:
-        _process: not_implemented
+        _process: unnecessary
         config:
-            _process: not_implemented
+            _process: unnecessary
             search:
                 _process: not_implemented
         host-entries:
@@ -208,15 +208,17 @@ system:
                 state:
                     _process: not_implemented
         servers:
-            _process: not_implemented
+            _process: unnecessary
             server:
-                _process: not_implemented
+                _process: unnecessary
                 address:
                     _process: not_implemented
                 config:
-                    _process: not_implemented
+                    _process: unnecessary
                     address:
-                        _process: not_implemented
+                        _process:
+                          - path: "ip.name-server"
+                            from: root_system.0
                     port:
                         _process: not_implemented
                 state:
