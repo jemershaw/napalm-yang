@@ -173,7 +173,7 @@ system:
         _process: unnecessary
         domain-name:
             _process:
-              - path: "ip domain-name"
+              - path: "ip.domain-name"
                 from: root_system.0
         hostname:
             _process:
